@@ -1,3 +1,6 @@
+# Scala Intro
+For this assignment in *DS4300: Large Scale Information Processing*, two different storage mechanisms (a key-value store and graph database) are custom built using Scala.
+
 ## Submission Notes
 - all source code is contained in ./src/main/scala
 - all test code is contained in ./src/test/scala
