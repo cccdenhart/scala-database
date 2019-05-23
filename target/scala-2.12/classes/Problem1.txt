@@ -1,0 +1,10 @@
+This code achieves the same result by translating the previous loops and conditionals into
+functional style map and reduce functions.  The first map serves to loop over each line in the
+source file, just as the initial for-loop did.  The underscore here simply acts as a parameter,
+referencing the line that the map is currently on.  The next map also performs the same action as
+its relative for-loop, looping over each token in the split lines.  At this point, the translation
+begins to become a little less clear; the functional style approach must use two more maps and a
+reduce function to achieve what an if statement did in the previous approach.  The first map
+converts the token to a '1' if it is null and '0' if not. The reduce zips the columns into tuples
+then the final map sums the nulls in each column, resulting in the same count of null values per
+column as in the previous result.
